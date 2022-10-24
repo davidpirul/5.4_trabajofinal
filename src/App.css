@@ -1,38 +1,220 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+  height: auto;
+  width: 100%;
+}
+
+/* CSS Navigation - Home*/
+
+.headofhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+.headofhead h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px #FF0000;
+}
+
+.headofhead img {
+  width: 35%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.headofhead img {
+  -webkit-animation: 10s rotate linear infinite;
+  animation: 15s rotate linear infinite;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+#img2 {
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+.bagicon {
+  filter: invert(100%);
+}
+
+.pizzahome {
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  justify-content: center;
+
+}
+
+.contenedormaximo {
+  margin-top: 25px;
+}
+
+.prueba {
+  text-align: start;
+  border-style: outset;
+  border-color: #ff000051;
+  margin: 25px;
+  padding: 5px;
+}
+
+.pizzahome img {
+  width: 15vw;
+  ;
+}
+
+.pizzainfo h6 {
+  text-align: center;
+  font-size: larger;
+}
+
+.pizzainfo p {
+  text-align: center;
+  font-size: larger;
+}
+
+.pizzainfo ol li {
+  list-style-type: "🍕";
+}
+
+.botonshome {
+  text-align: center;
+}
+
+/* CSS Detalles */
+
+.detailcont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1%;
+  height: 95.2vh;
+}
+
+.pimg {
+  padding: 2%;
+  width: 40vw;
+  border-radius: 100px;
+}
+
+.textcontent {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pname {
+  text-transform: capitalize;
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pdesc {
+  text-align: start;
+  font-style: italic;
+  padding: 2%;
+
+}
+
+.pingr {
+  text-transform: capitalize;
+}
+
+.pprice {
+  font-size: 2rem;
+  text-shadow: 2px 2px #FF0000;
+}
+
+/* CSS Carrito */
+
+.carrodetail {
+  height: 95.2vh;
+}
+
+.listacompras {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 35rem;
+
+
+}
+
+.flexito {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(255, 0, 0, 0.341);
+  padding: 2%;
+  text-transform: capitalize;
+}
+
+.detallenombre {
+  display: flex;
+  flex-direction: row;
+}
+
+.detallenombre p {
+  margin: auto;
+}
+
+.detallenombre img {
+  width: 5vw;
+  border-radius: 50px;
+}
+
+.detallevalor {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.detallevalor p {
+  margin: auto;
+}
+
+.detallevalor button {
+  margin: auto;
+}
+
+.totalisimo {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin: 5%;
+  align-items: center;
+}
+
+.totalisimo p {
+  font-size: 2rem;
+  text-shadow: 2px 2px #FF0000;
 }
