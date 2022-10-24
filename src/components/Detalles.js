@@ -10,7 +10,7 @@ export default function Detalles() {
 
   const irAHome = () => {
     backHome("/")
-   }
+  }
 
   useEffect(() => {
 
