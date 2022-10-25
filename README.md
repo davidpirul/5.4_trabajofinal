@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+This project was deploy in [Vercel](https://davidpirul5-4.vercel.app/).
 
 ## Available Scripts
 
