@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import MyContext from "../context/Context";
 
 export default function Detalles() {
-  const { basePizzas, pizzaDetail, setPizzaDetail, ingredientes, setIgredients } = useContext(MyContext);
+  const { basePizzas, pizzaDetail, setPizzaDetail, ingredientes, setIgredients, addItemToCart } = useContext(MyContext);
   const { id } = useParams();
 
   const backHome = useNavigate();
@@ -42,7 +42,7 @@ export default function Detalles() {
           <div>
             <button onClick={irAHome} type="button" className="btn btn-outline-danger btn-sm">Volver</button>
             &nbsp;
-            <button type="button" className="btn btn-outline-danger btn-sm">Comprar</button>
+            <button onClick={() => addItemToCart(pizzaDetail)} type="button" className="btn btn-outline-danger btn-sm">Comprar</button>
           </div>
         </div>
 

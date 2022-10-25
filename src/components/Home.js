@@ -19,7 +19,7 @@ export default function Home() {
       </div>
 
       <div className="container">
-      <h1 className="contenedormaximo">ESCOJE TU PIZZA</h1>
+      <h1 className="contenedormaximo">ESCOGE TU PIZZA</h1>
         <div className="pizzahome">
           {basePizzas.map((pizza, i) => (
             <div className="prueba" key={i}>
